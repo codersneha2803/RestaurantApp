@@ -1,0 +1,36 @@
+.container {
+  /* overflow-x: hidden; */
+  background-color: var(--color-sub);
+  padding: 1rem 8rem;
+  display: flex;
+  /* gap: 6rem; */
+  justify-content: space-between;
+}
+
+.leftBox {
+  max-width: 950px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+  flex-direction: column;
+}
+
+.leftBoxMenuCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftBoxHeading {
+  padding: 10px;
+}
+
+.leftBoxHeading hr {
+  border: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.rightBox {
+  max-width: 250px;
+}
