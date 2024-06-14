@@ -1,0 +1,9 @@
+.offerBox {
+  background-image: linear-gradient(to right, #faff00, #ed994c);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.offerBox span {
+  font-weight: bold;
+}
