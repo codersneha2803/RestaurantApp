@@ -1,0 +1,40 @@
+.hotelDetails {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+}
+
+.hotelDetails span {
+  font-size: small;
+  font-weight: 900;
+  padding: 0;
+}
+
+.hotelDetails img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.hotelNameWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.siteDetails {
+  display: flex;
+  gap: 5px;
+}
+
+.siteDetails img {
+  width: 15px;
+  height: 15px;
+}
+
+.siteDetails a {
+  color: var(--color-primary);
+  font-size: smaller;
+}

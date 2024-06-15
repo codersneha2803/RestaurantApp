@@ -1,2 +1,39 @@
 .locationBox {
+  /* max-width: 950px; */
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+  border-radius: 4px;
+}
+
+.locationBox:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.locationBoxHeading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.locationBox .locationBoxHeading hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-primary);
+}
+
+.locationAddress {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.locationAddress p {
+  font-size: small;
 }
