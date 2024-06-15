@@ -3,6 +3,8 @@ import MenuCard from "../components/menucards/MenuCard";
 import menuCardData from "../data/menuCardData.js";
 import styles from "./Home.module.css";
 import Offer from "../components/offer/Offer.jsx";
+import Location from "../components/location/Location.jsx";
+import OffcialWebsite from "../components/officialwebsites/OfficialWebsite.jsx";
 
 const Home = () => {
   return (
@@ -37,7 +39,10 @@ const Home = () => {
           />
         </div>
         <div className={styles.locationBox}>
-          <location />
+          <Location />
+        </div>
+        <div>
+          <OffcialWebsite />
         </div>
       </div>
     </div>
