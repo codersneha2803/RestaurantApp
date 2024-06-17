@@ -1,0 +1,122 @@
+.footerBox1 .footerBox2 {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* .footerBox1 {
+  background-image: url("../../assets/footerBg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  max-width: 100%;
+  height: 220px;
+} */
+
+.footerBox1 {
+  position: relative;
+  height: 205px;
+  background: url("../../assets/footerBg.png") no-repeat center center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity and color here */
+  text-align: center;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.footerContent {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerBox1 .footerContent h3,
+p {
+  color: var(--color-white);
+}
+.footerBox1 .footerContent span {
+  color: var(--color-primary);
+}
+
+.footerBox1 .footerContent a {
+  width: 95px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: small;
+  border-radius: 4px;
+}
+
+.footerBox2 {
+  position: relative;
+  height: 220px;
+  background-color: var(--color-secondary);
+  text-align: center;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footermenu {
+  width: 400px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 20px 0; */
+}
+.footerBox2 .footermenu h3 {
+  color: var(--color-primary);
+}
+
+.footermenu h3 span {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.footernavList {
+  width: 100%;
+}
+
+.footernavList ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  color: var(--color-white);
+  font-size: small;
+}
+
+.socialIcons {
+  width: 190px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialIcons img {
+  width: 25px;
+  height: 25px;
+}
+
+.footermenu .rightsText {
+  color: var(--color-white);
+  font-size: smaller;
+}
