@@ -1,7 +1,7 @@
 .container {
   /* overflow-x: hidden; */
   background-color: var(--color-sub);
-  padding: 1rem 8rem;
+  padding: 1rem 8rem 7rem 8rem;
   display: flex;
   /* gap: 6rem; */
   justify-content: space-between;
