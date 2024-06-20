@@ -33,7 +33,7 @@
 
 .rightBox {
   max-width: 250px;
-  height: 850px;
+  /* height: 850px !important; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

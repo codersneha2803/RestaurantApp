@@ -45,9 +45,7 @@ const Footer = () => {
               <img src={twitterImage} alt="facebookImg" />
             </a>
           </div>
-          <span className={styles.rightsText}>
-            tablebooky.com | All right reserved
-          </span>
+          <span>tablebooky.com | All right reserved</span>
         </div>
       </div>
     </>
