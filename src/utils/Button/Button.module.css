@@ -1,0 +1,8 @@
+.slotBtn {
+  width: 82px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  border-style: none;
+  color: var(--color-white);
+}

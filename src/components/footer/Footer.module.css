@@ -14,7 +14,7 @@
 
 .footerBox1 {
   position: relative;
-  height: 205px;
+  height: 220px;
   background: url("../../assets/footerBg.png") no-repeat center center;
   background-size: cover;
   background-blend-mode: multiply;
@@ -41,15 +41,15 @@
   align-items: center;
 }
 
-.footerBox1 .footerContent h3,
-p {
+.footerBox1 > .footerContent > h3,
+.footerBox1 > .footerContent > p {
   color: var(--color-white);
 }
-.footerBox1 .footerContent span {
+.footerBox1 > .footerContent > span {
   color: var(--color-primary);
 }
 
-.footerBox1 .footerContent a {
+.footerBox1 > .footerContent > a {
   width: 95px;
   height: 30px;
   display: inline-flex;
@@ -83,11 +83,12 @@ p {
   align-items: center;
   /* padding: 20px 0; */
 }
-.footerBox2 .footermenu h3 {
+.footerBox2 > .footermenu > h3 {
   color: var(--color-primary);
 }
 
-.footermenu h3 span {
+.footerBox2 > .footermenu > h3,
+.footerBox2 > .footermenu > span {
   font-weight: bold;
   font-size: larger;
 }
@@ -96,7 +97,7 @@ p {
   width: 100%;
 }
 
-.footernavList ul {
+.footernavList > ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -111,12 +112,12 @@ p {
   justify-content: space-evenly;
 }
 
-.socialIcons img {
+.socialIcons > img {
   width: 25px;
   height: 25px;
 }
 
-.footermenu .rightsText {
+.footerBox2 > .footermenu > span {
   color: var(--color-white);
   font-size: smaller;
 }

@@ -5,18 +5,28 @@ import styles from "./Home.module.css";
 import Offer from "../components/offer/Offer.jsx";
 import Location from "../components/location/Location.jsx";
 import OffcialWebsite from "../components/officialwebsites/OfficialWebsite.jsx";
-import Banner from "../components/appdownloadbanner/Banner.jsx";
-import Footer from "../components/footer/Footer.jsx";
+import Leftwrapper from "../utils/Leftwrapper.jsx";
+import Rightwrapper from "../utils/Rightwrapper.jsx";
+import Container from "../utils/Container.jsx";
+
+//Named export function
+export function Heading(props) {
+  return (
+    <>
+      <div className={styles.leftBoxHeading}>
+        <h3>{props.heading}</h3>
+        <hr />
+      </div>
+    </>
+  );
+}
 
 const Home = () => {
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.leftBox}>
-          <div className={styles.leftBoxHeading}>
-            <h3>Our Restaurants</h3>
-            <hr />
-          </div>
+      <Container>
+        <Leftwrapper>
+          <Heading heading="Our Restaurant" />
           <div className={styles.leftBoxMenuCard}>
             {menuCardData.map((item, index) => {
               // console.log(item.title);
@@ -33,8 +43,8 @@ const Home = () => {
               );
             })}
           </div>
-        </div>
-        <div className={styles.rightBox}>
+        </Leftwrapper>
+        <Rightwrapper>
           <div className={styles.offerBox}>
             <Offer
               offer="Automatically save 2% on your bill if you reserve your tble with "
@@ -47,10 +57,8 @@ const Home = () => {
           <div>
             <OffcialWebsite />
           </div>
-        </div>
-      </div>
-      <Banner />
-      <Footer />
+        </Rightwrapper>
+      </Container>
     </>
   );
 };

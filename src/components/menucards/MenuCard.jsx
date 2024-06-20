@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./MenuCard.module.css";
+import Button from "../../utils/Button/Button";
 
 const MenuCard = (props) => {
   return (
@@ -17,11 +18,7 @@ const MenuCard = (props) => {
         </div>
         <div className={styles.cardBtn}>
           {props.orderTime.map((item, index) => {
-            return (
-              <button key={index} className={styles.Bt1}>
-                {item}
-              </button>
-            );
+            return <Button key={index} slot={item} />;
           })}
           {/* <button className={styles.Bt1}>9:30</button>
           <button className={styles.Bt2}>9:30</button>

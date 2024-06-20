@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Location.module.css";
-import locationImg from "../../assets/Vector.png";
+import mappin_icon from "../../assets/mappin_icon.png";
 import locationData from "../../data/locationData";
 import Box from "../../utils/Box";
 export function LocationAddress(props) {
@@ -8,7 +8,7 @@ export function LocationAddress(props) {
     <>
       <div className={styles.locationAddress}>
         <div>
-          <img src={locationImg} alt="locationImg" />
+          <img src={mappin_icon} alt="mappin_icon" />
         </div>
         <div>
           <p>{props.locationDetails}</p>
