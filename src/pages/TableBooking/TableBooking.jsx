@@ -12,8 +12,8 @@ import mappinIcon from "../../assets/mappin_icon.png";
 import ScheduleControl from "../../components/scheduleControls/scheduleControl";
 import Button from "../../utils/Button/Button";
 import Offer from "../../components/offer/Offer";
-import Location from "../../components/location/Location";
 import OffcialWebsite from "../../components/officialwebsites/OfficialWebsite";
+import Map from "../../components/hotelmap/Map";
 
 const TableBooking = () => {
   const slotButton = [
@@ -84,7 +84,9 @@ const TableBooking = () => {
               offerPlace="DINE WITH FLORIDA"
             />
           </div>
-
+          <div>
+            <Map></Map>
+          </div>
           <div>
             <OffcialWebsite />
           </div>
