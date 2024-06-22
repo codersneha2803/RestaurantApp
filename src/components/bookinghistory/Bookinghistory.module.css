@@ -1,0 +1,63 @@
+.bookinghistoryBlock {
+  display: flex;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.bookingImage > img {
+  width: 150px;
+  height: 114px;
+}
+
+.bookingDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 0 5px;
+  min-width: 60%;
+}
+
+.bookingdishName > .menuName {
+  font-size: small;
+  font-weight: bold;
+}
+
+.bookingdishName > .bookingstatusTime,
+.guestDeatils1 > .bookingstatusIn {
+  font-size: 10px;
+  color: var(--color-sub);
+}
+
+.bookingstatus {
+  font-size: 10px;
+  color: var(--color-primary);
+}
+
+.bookingdishName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookingdatedetails,
+.guestDeatils,
+.guestDeatils1 {
+  display: flex;
+}
+.bookingDetails > .bookingdatedetails > img,
+.bookingDetails > .guestDeatils > .guestDeatils1 > img {
+  width: 15px;
+  height: 15px;
+}
+
+.bookingDetails > .bookingdatedetails > span,
+.bookingDetails > .guestDeatils > .guestDeatils1 > span {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.guestDeatils {
+  display: flex;
+  justify-content: space-between;
+}

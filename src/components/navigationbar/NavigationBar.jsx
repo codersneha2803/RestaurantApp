@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NavigationBar.module.css";
-import profileImg from "./../../assets/profilepicture.png";
+import profileImg from "./../../assets/profileImage.png";
 
 const NavigationBar = () => {
   let navlist = ["Home", "ContactUs", "SignOut"];
