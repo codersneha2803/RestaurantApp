@@ -3,6 +3,7 @@ import styles from "./Footer.module.css";
 import fbImage from "../../assets/socialmedia_Icons/facebook.png";
 import instagramImage from "../../assets/socialmedia_Icons/instagram.png";
 import twitterImage from "../../assets/socialmedia_Icons/twitter.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
             Register with us and win amazing discount point on
             <span> table booking</span>
           </p>
-          <a href="#">Register</a>
+          <Link to="/">Register</Link>
         </div>
       </div>
       <div className={styles.footerBox2}>
@@ -35,15 +36,15 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.socialIcons}>
-            <a href="#">
+            <Link to="/">
               <img src={fbImage} alt="facebookImg" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/">
               <img src={instagramImage} alt="facebookImg" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/">
               <img src={twitterImage} alt="facebookImg" />
-            </a>
+            </Link>
           </div>
           <span>tablebooky.com | All right reserved</span>
         </div>
