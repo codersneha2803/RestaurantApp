@@ -1,33 +1,33 @@
 import React from "react";
 import styles from "./NavigationBar.module.css";
 import profileImg from "./../../assets/profileImage.png";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
-  let navlist = ["Home", "ContactUs", "SignOut"];
+  let navlist = [
+    { name: "Home", route: "/" },
+    { name: "Table Book", route: "/tablebooking" },
+    { name: "Profile", route: "/profile" },
+  ];
   return (
     <>
       <div className={styles.navContainer}>
         <h3>
           Welcome to <span className={styles.companyName}>TableBooky</span>
         </h3>
-        <ul className={styles.navigation}>
-          {navlist.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={styles.navLink}>{item}</a>
-              </li>
-            );
-          })}
-          {/* <li>
-            <a className={styles.navLink}>Home</a>
-          </li>
-          <li>
-            <a>ContactUs</a>
-          </li>
-          <li>
-            <a>SignOut</a>
-          </li> */}
-        </ul>
+        <nav>
+          <ul className={styles.navigation}>
+            {navlist.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link to={item.route} className={styles.navLink}>
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
 
         <div className={styles.profile}>
           <h4>Sneha</h4>
