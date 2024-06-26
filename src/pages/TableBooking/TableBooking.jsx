@@ -14,6 +14,7 @@ import Button from "../../utils/Button/Button";
 import Offer from "../../components/offer/Offer";
 import OffcialWebsite from "../../components/officialwebsites/OfficialWebsite";
 import Map from "../../components/hotelmap/Map";
+import { Link } from "react-router-dom";
 
 const TableBooking = () => {
   const slotButton = [
@@ -49,7 +50,7 @@ const TableBooking = () => {
               </div>
               <div className={styles.menu}>
                 <img src={showmenuIcon} alt="showmenuIcon" />
-                <a href="#">Show Menu</a>
+                <Link to="/">Show Menu</Link>
               </div>
             </div>
             <div className={styles.hotelDesciption}>

@@ -4,6 +4,7 @@ import { Heading } from "../location/Location";
 import styles from "./OfficialWebsite.module.css";
 import hotelDetails from "../../data/hotelDetails";
 import linkImg from "../../assets/link.png";
+import { Link } from "react-router-dom";
 
 const OffcialWebsite = () => {
   return (
@@ -22,7 +23,7 @@ const OffcialWebsite = () => {
                 </div>
                 <div className={styles.siteDetails}>
                   <img src={linkImg} alt="linkImage" />
-                  <a href="#">Go to site </a>
+                  <Link to="/">Go to site </Link>
                 </div>
               </div>
             </div>
