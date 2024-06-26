@@ -5,14 +5,17 @@ import NavigationBar from "./components/navigationbar/NavigationBar";
 import Home from "./pages/Home";
 import TableBooking from "./pages/TableBooking/TableBooking";
 import Myprofile from "./pages/Myprofile/Myprofile";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
       <NavigationBar />
-      {/* <Home /> */}
-      {/* <TableBooking /> */}
-      <Myprofile />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tablebooking" element={<TableBooking />} />
+        <Route path="/profile" element={<Myprofile />} />
+      </Routes>
       <Banner />
       <Footer />
     </>
