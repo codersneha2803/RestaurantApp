@@ -9,7 +9,7 @@ import detailIcon from "../../assets/TableBooking_Icon/menu-hamburger.png";
 import clockIcon from "../../assets/TableBooking_Icon/clock_icon.png";
 import showmenuIcon from "../../assets/TableBooking_Icon/showmenu.png";
 import mappinIcon from "../../assets/mappin_icon.png";
-import ScheduleControl from "../../components/scheduleControls/scheduleControl";
+// import ScheduleControl from "../../components/scheduleControls/scheduleControl";
 import Button from "../../utils/Button/Button";
 import Offer from "../../components/offer/Offer";
 import OffcialWebsite from "../../components/officialwebsites/OfficialWebsite";
@@ -68,7 +68,7 @@ const TableBooking = () => {
               </div>
             </div>
           </div>
-          <ScheduleControl />
+          {/* <ScheduleControl /> */}
           <div className={styles.timeslotContainer}>
             <h3>Available Time Slots</h3>
             <div className={styles.slotBtnContainer}>
